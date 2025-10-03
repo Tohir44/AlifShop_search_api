@@ -1,0 +1,2 @@
+Status code: 401
+Headers: {'Date': 'Thu, 02 Oct 2025 16:28:00 GMT', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'}
