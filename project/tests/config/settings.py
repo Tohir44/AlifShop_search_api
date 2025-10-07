@@ -1,5 +1,0 @@
-BASE_URL = "https://gw.alifshop.uz/web/client"
-
-# Братья, незабываем матерей! Токены бывуют разние
-TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vc2VydmljZS1jb3JlLmFsaWZuYXNpeWEuaW50ZXJuYWwvZ2F0ZXdheS9hbGlmc2hvcC9hdXRoL2xvZ2luIiwic3ViIjoiNDQyNzAyOCIsImp0aSI6ImJkZGZkOGE3LWVmZTUtNDM4Ni1hNDgwLTAwMWYxNmJkYzY4YyIsImlhdCI6MTc1ODg5OTE5NS4zMzE5OTEsIm5iZiI6MTc1ODg5OTE5NS4zMzE5OTEsImV4cCI6MTkxNDQxOTE5NS4zMzE5OTF9.KKAQer3s0QFnKNC-Edc7pVq4a0ANuPYwpIAtFweluhg"
-
