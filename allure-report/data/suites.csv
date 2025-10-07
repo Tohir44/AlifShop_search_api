@@ -1,5 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","340","test_reviews","project.tests","2025-10-04","passed","2025-10-04","","test_shop_api","",""
-"","376","test_popular_brands","project.tests","2025-10-04","passed","2025-10-04","","test_shop_api","",""
-"","1254","test_active_events","project.tests","2025-10-04","passed","2025-10-04","","test_shop_api","",""
-"","368","test_offers_v2","project.tests","2025-10-04","passed","2025-10-04","","test_shop_api","",""
