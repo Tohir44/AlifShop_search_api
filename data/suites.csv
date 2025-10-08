@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Oct 08 15:19:38 GMT 2025","Wed Oct 08 15:19:39 GMT 2025","861","test_api_search.tests","test_products_api","","","","test_products_negative_symbols",""
+"passed","Wed Oct 08 15:19:37 GMT 2025","Wed Oct 08 15:19:38 GMT 2025","888","test_api_search.tests","test_api_search_api","","","","test_suggestions_negative_empty",""
+"passed","Wed Oct 08 15:19:38 GMT 2025","Wed Oct 08 15:19:38 GMT 2025","888","test_api_search.tests","test_products_api","","","","test_products_positive",""
+"passed","Wed Oct 08 15:19:36 GMT 2025","Wed Oct 08 15:19:37 GMT 2025","1023","test_api_search.tests","test_api_search_api","","","","test_suggestions_positive",""
