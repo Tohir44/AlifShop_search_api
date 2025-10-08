@@ -1,4 +1,4 @@
-name: Run API Tests with Allure
+name: Python CI
 
 on:
   push:
@@ -6,40 +6,40 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: write  # 👈 разрешаем Actions пушить в репозиторий
+
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: "3.11"
+
+      - name: Upgrade pip
+        run: python -m pip install --upgrade pip
 
       - name: Install dependencies
-        run: |
-         python -m pip install --upgrade pip
-         pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
+      - name: Run pytest
+        run: pytest --alluredir=allure-results
 
-      - name: Run tests with Allure
-        run: |
-          pytest test_api_search --alluredir=allure-results
-
-      - name: Generate Allure Report
-        uses: simple-elf/allure-report-action@v1
+      - name: Generate Allure report
+        uses: simple-elf/allure-report-action@v1.7
         with:
           allure_results: allure-results
           allure_report: allure-report
           allure_history: allure-history
 
-      - name: Deploy Report to GitHub Pages
+      - name: Deploy Allure report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
-        if: success()
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: allure-history
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # 👈 авторизация
+          publish_dir: ./allure-report               # 👈 путь к отчёту
