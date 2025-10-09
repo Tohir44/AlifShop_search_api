@@ -1,6 +1,7 @@
 import requests
-from telegram_bot_config import telegram_bot_token, chat_id
 
+telegram_bot_token = "8301114039:AAEwdqiB82zLkOGZsESSzQRmlkSbPMMaicI"
+chat_id = "8146373270" 
 
 def send_telegram_message(message: str):
     """Отправка форматированного сообщения в Telegram."""
